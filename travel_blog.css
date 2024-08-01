@@ -1,0 +1,108 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-weight: regular;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header img.top-left {
+    max-width: 250px;
+}
+header img.top-right {
+    max-width: 250px;
+}
+header div {
+    flex: 1;
+    text-align: center;
+}
+header h1 {
+    position: relative;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+    font-size: 3.2em;
+    text-shadow: 11px 11px 11px rgba(0, 0, 0, 0.311);
+    text-transform: lowercase;
+    margin: 0.5em 0;
+}
+header h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    margin: 0.5em auto 0;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+.social-links a {
+    text-decoration: none;
+    color: blue;
+    font-size: 1em;
+}
+.social-links :visited {
+    color: blueviolet;
+}
+.container {
+    padding: 2em;
+}
+.intro, .tips, .places, .gallery, .videos {
+    margin-bottom: 2em;
+}
+.intro h2, .tips h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+.gallery, .videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.gallery h2, .videos h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 100%;
+    text-decoration: underline;
+}
+.gallery img, .videos iframe {
+    max-width: 30%;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.gallery img:hover, .videos iframe:hover {
+    transform: scale(1.1);
+}
+.places ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.places table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.places th, .places td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.places th {
+    background-color: rgb(66, 60, 154);
+    color: white;
+}
